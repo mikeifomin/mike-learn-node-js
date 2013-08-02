@@ -1,13 +1,7 @@
-function User(name){
-    this.name = name;
-}
+var user = require('./user');
 
-User.prototype.hello = function(who){
-    console.log("hi, "+ who.name) ;
-
-}
-var vas = new User("Вася");
-var pet = new User("Петя");
+var vas = new user.User("Вася");
+var pet = new user.User("Петя");
 
 vas.hello(pet);
 
